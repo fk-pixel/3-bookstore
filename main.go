@@ -10,9 +10,8 @@ func main() {
 	const conferenceTickets int = 50
 	var remainigTickets uint = 50
 	var bookings [50]string
-	
-	fmt.Printf("conferenceName is %T, conferenceTickets is %T, remainigTickets is %T\n", conferenceName, conferenceTickets, remainigTickets )
 
+	fmt.Printf("conferenceName is %T, conferenceTickets is %T, remainigTickets is %T\n", conferenceName, conferenceTickets, remainigTickets )
 
 	fmt.Println("Welcome to", conferenceName, "booking application")
 	// fmt.Printf("Welcome to %v booking application\n", conferenceName)
@@ -35,6 +34,12 @@ func main() {
 
 	remainigTickets = remainigTickets - userTickets
 	bookings[0] = firstName + " " + lastName
+	
+	fmt.Printf("The whole array: %v\n", bookings)
+	fmt.Printf("The first value: %v\n", bookings[0])
+	fmt.Printf("Array type: %T\n", bookings)
+	fmt.Printf("Array length: %v\n", len(bookings))
+	
 	//userName = "John"
 	//userTickets = 2
 	//fmt.Printf("User %v-%v booked %v tickets.\n", firstName, lastName, userTickets) 
